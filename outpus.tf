@@ -12,3 +12,8 @@ output "instance_id" {
     description = "The ID of the EC2 instance"
     value = aws_instance.server.id
 }
+
+output "instance_type" {
+    description = "The type of EC2 instance"
+    value = aws_instance.server.instance_type
+}
