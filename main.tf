@@ -1,3 +1,6 @@
+provider "aws" {
+  region = var.region
+}
 data "aws_ami" "ami" {
     most_recent = true
     filter {
